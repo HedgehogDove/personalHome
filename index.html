@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>My Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" type="image/x-icon" href="images/myself.png" media="screen" />
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/style.css">
 
-
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/mouseWheel.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
+
 </head>
 <body>
     <div class="main">
@@ -26,6 +29,9 @@
             </li>
             <li>
                 <span>联系我</span>
+            </li>
+            <li>
+                <span>玩玩小游戏</span>
             </li>
         </ul>
         <ul class="moduleBox">
@@ -64,11 +70,20 @@
                         <p class="time">2014.3-2015.9</p>
                         <ul class="project">
                             <li>
-                                <p class="name">恩纽网（<a href="http://www.ennew.cn/">http://www.ennew.cn/</a>）</p>
+                                <p class="name">仿拉勾网制作</p>
                                 <ul class="duty">
-                                    <li>1根据产品需求，与UI设计师以及后台开发人员协作完成指定Web页面功能</li>
+                                    <li>1观察拉勾网内容、页面功能</li>
+                                    <li>2页面制作、美化，不断完善代码</li>
+                                    <a href="https://libing19910907.github.io/imitate/">https://libing19910907.github.io/imitate/</a>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="name">恩纽网</p>
+                                <ul class="duty">
+                                    <li>1根据产品需求，与UI设计师以及后台开发人员协作完成Web页面功能</li>
                                     <li>2根据设计图，制作页面；并实现交互功能</li>
                                     <li>3页面调整、美化。进行进一步的兼容性调整提高整合代码，不断完善页面效果</li>
+                                    <a href="http://www.ennew.cn/">http://www.ennew.cn/</a>
                                 </ul>
                             </li>
 
@@ -163,9 +178,17 @@
                     </li>
                 </ul>
             </li>
+
+            <li class="module gameBox">
+                <canvas id="canvas" class="game" width="640" height="600">
+                    您的浏览器不支持canvas！
+                </canvas>
+            </li>
         </ul>
     </div>
 </body>
+
+<script src="js/game.js"></script>
 <script>
     var typeWriter = {
         msg: function(msg){
@@ -198,4 +221,6 @@
         typeWriter.type();
     };
 </script>
+
+
 </html>

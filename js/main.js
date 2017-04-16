@@ -6,7 +6,7 @@ $(function () {
     function init(){
         $(document).mousewheel(function(event,delta){
             if(delta == 1){
-                if(tem<=3&&tem!=0){
+                if(tem<=4&&tem!=0){
                     tem=tem-1;
                     $('.moduleBox').stop();
                     $('.moduleBox').animate({top:-tem*$(window).height()},500);
@@ -14,7 +14,7 @@ $(function () {
                 }
             }
             if(delta == -1){
-                if(tem<3||tem==0){
+                if(tem<4||tem==0){
                     tem=tem+1;
                     $('.moduleBox').stop();
                     $('.moduleBox').animate({top:-tem*$(window).height()},500);

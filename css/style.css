@@ -39,7 +39,6 @@ body,html{width: 100%;height: 100%;font-family: "Microsoft JhengHei","Microsoft 
 .conList{width: 400px;height:100px;position: absolute;bottom: 100px;left: 50%;margin-left: -300px}
 .conList li{width: 80px;height: 80px;border-radius: 50%;float: left;position: absolute;top: 10px;cursor: pointer}
 .conList li a{width: 100%;height: 100%;display: block}
-
 .conList li:hover{
     width: 100px;
     height: 100px;
@@ -60,6 +59,9 @@ body,html{width: 100%;height: 100%;font-family: "Microsoft JhengHei","Microsoft 
 .git{background: url("../images/git.png") no-repeat center;background-size: cover;left: 410px}
 .git:hover{left: 400px}
 
+/****小游戏***/
+.gameBox{background: #CBB9B9;}
+.game{position: absolute;top: 50%;left: 50%;margin-top: -300px;margin-left: -300px}
 
 /****分页***/
 .page{width: 25px;height: 100px;position: absolute;right: 20px;top: 50%;z-index: 5;margin-top: -50px}
