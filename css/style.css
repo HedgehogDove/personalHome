@@ -1,0 +1,68 @@
+body,html{width: 100%;height: 100%;font-family: "Microsoft JhengHei","Microsoft YaHei","STHeiti SC","SimHei"}
+.main{width: 100%;height: 100%;overflow: hidden;position: relative}
+.main .moduleBox{width: 100%;height: 100%;position: absolute;top: 0}
+.main .module{width: 100%;height: 100%;position: relative}
+.visual{position: relative;background: url("../images/bg.jpg") no-repeat center;background-size: cover}
+.visual img{width:400px;height:400px;position: absolute;bottom: 0;left: 50%;margin-left: -200px}
+.visual .greet{font-size: 40px;position: absolute;top: 150px;width: 100%;text-align: center}
+
+
+/*技能*/
+.experience{background: #f3f3f3}
+.experience h1{font-size: 50px;color: #000000;text-align: center}
+.experience h3{font-size: 35px;color: #a3a3a3;text-align: center}
+.experience .skill{width: 980px;margin: 0 auto}
+.experience .skill li{margin-top: 40px}
+.experience .skill p{line-height: 50px;font-size: 25px;border-left: 3px solid}
+.experience .skill li:nth-child(odd) p{background: #d6efff;color: #2a7da9;border-color: #2a7da9}
+.experience .skill li:nth-child(even) p{background: #eaf6d0;color: #6e9c0f;border-color: #6e9c0f}
+
+
+
+/****工作经历***/
+.work{background: #FFEFDD}
+.work .workList{width: 980px;margin: 0 auto}
+.work .workList div{width: 460px}
+.work .company{font-size: 25px}
+.work .time{font-size: 20px}
+.work .post{font-size: 20px}
+.work .name{font-size: 15px}
+.work .project .duty{position: absolute;left: 460px;top: 0;background: #ede47d;height: 100%;width: 100%}
+.work .project p{line-height: 96px;text-align: center}
+.work .project>li{height: 100px;border: 2px solid #e29611;border-radius:10px;position: relative;overflow: hidden;margin-bottom: 10px}
+
+/****联系我***/
+.contact{background: peru}
+.contact p{position: absolute;top: 50px;display: none;font-size: 30px;text-shadow: 0px 0px 5px }
+.phoneNumber{left: 290px;color: #3de7d5}
+.emailNumber{left: 290px;color: #1ad282}
+.conList{width: 400px;height:100px;position: absolute;bottom: 100px;left: 50%;margin-left: -300px}
+.conList li{width: 80px;height: 80px;border-radius: 50%;float: left;position: absolute;top: 10px;cursor: pointer}
+.conList li a{width: 100%;height: 100%;display: block}
+
+.conList li:hover{
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    animation: myAnimate 0.5s;
+    -webkit-animation: myAnimate 0.5s;
+}
+@keyframes myAnimate{
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg);}
+}
+.phone{background: url("../images/phone.png") no-repeat center;background-size: cover;left: 100px}
+.phone:hover{left: 90px}
+.email{background: url("../images/email.png") no-repeat center;background-size: cover;left: 210px}
+.email:hover{left: 200px}
+.book{background: url("../images/jianshu.png") no-repeat center;background-size: cover;left: 310px}
+.book:hover{left: 300px}
+.git{background: url("../images/git.png") no-repeat center;background-size: cover;left: 410px}
+.git:hover{left: 400px}
+
+
+/****分页***/
+.page{width: 25px;height: 100px;position: absolute;right: 20px;top: 50%;z-index: 5;margin-top: -50px}
+.page li{width: 30px;height: 30px;background: #000;margin-top: 20px;border-radius: 50%;position: relative}
+.page li span{position: absolute;right: 40px;white-space:nowrap;font-size:20px;font-weight:500;line-height: 30px;text-align:center;background: paleturquoise;padding: 0 20px 0 20px;border-radius: 5px;display: none}
+.page .current{background: #ccc}
